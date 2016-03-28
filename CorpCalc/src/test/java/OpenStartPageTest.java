@@ -20,7 +20,8 @@ public class OpenStartPageTest extends BaseTest {
     public void openStartPage() throws InterruptedException {
 
         step.
-                openCorpCalc();
+                openCorpCalc().
+                checkSignIn();
 
     }
 

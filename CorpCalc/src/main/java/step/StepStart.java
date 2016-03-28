@@ -30,4 +30,10 @@ public class StepStart extends BaseSteps{
     }
 
 
+    @Step("Check Sign In")
+    public StepStart checkSignIn() throws InterruptedException {
+
+        startPage.checkLoginForm(driver);
+        return this;
+    }
 }

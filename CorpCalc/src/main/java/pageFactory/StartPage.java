@@ -18,4 +18,13 @@ public class StartPage {
         PageFactory.initElements(driver, this);
     }
 
+    @FindBy(className = "login-blc")
+    WebElement loginForm;
+
+    public void checkLoginForm(WebDriver driver) throws InterruptedException {
+
+        Waiter.wait(driver, "login-blc", 10, 'c');
+        Assert.assertTrue(loginForm.isDisplayed());
+
+    }
 }
